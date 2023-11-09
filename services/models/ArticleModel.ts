@@ -1,4 +1,4 @@
-import ArticleMetaInfoModel from './ArticleMetaInfoModel';
+import ArticleMetaInfoModel from './ArticleMetaInfoModel.js';
 
 interface ArticleModel extends ArticleMetaInfoModel {
   content: string;

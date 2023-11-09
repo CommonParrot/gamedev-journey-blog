@@ -3,8 +3,8 @@
 import { exec } from 'child_process';
 import Watcher from 'watcher';
 
-import PagePublisher from '../services/PagePublisher';
-import ArticlePublisher from '../services/ArticlePublisher';
+import PagePublisher from '../services/PagePublisher.js';
+import ArticlePublisher from '../services/ArticlePublisher.js';
 
 const DIST = './app/public';
 

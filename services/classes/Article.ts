@@ -1,5 +1,5 @@
-import ArticleModel from '../models/ArticleModel';
-import ArticleMetaInfo from './ArticleMetaInfo';
+import ArticleModel from '../models/ArticleModel.js';
+import ArticleMetaInfo from './ArticleMetaInfo.js';
 
 class Article extends ArticleMetaInfo {
   article: ArticleModel;

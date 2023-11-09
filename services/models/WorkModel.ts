@@ -1,4 +1,4 @@
-import WorkMetaInfoModel from './WorkMetaInfoModel';
+import WorkMetaInfoModel from './WorkMetaInfoModel.js';
 
 interface WorkModel extends WorkMetaInfoModel {
   content: string;

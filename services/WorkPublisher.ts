@@ -6,10 +6,14 @@ import * as ejs from 'ejs';
 import * as fs from 'fs';
 import * as path from 'path';
 
-import WorkMetaInfo from './classes/WorkMetaInfo';
-import Work from './classes/Work';
-import WorkModel from './models/WorkModel';
-import PagePublisher from './PagePublisher';
+import WorkMetaInfo from './classes/WorkMetaInfo.js';
+import Work from './classes/Work.js';
+import WorkModel from './models/WorkModel.js';
+import PagePublisher from './PagePublisher.js';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 class WorkPublisher {
   // A path of the directory containing the markdown works files.

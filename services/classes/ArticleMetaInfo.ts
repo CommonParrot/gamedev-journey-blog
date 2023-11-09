@@ -1,4 +1,4 @@
-import ArticleMetaInfoModel from '../models/ArticleMetaInfoModel';
+import ArticleMetaInfoModel from '../models/ArticleMetaInfoModel.js';
 
 class ArticleMetaInfo implements ArticleMetaInfoModel {
   id: number;

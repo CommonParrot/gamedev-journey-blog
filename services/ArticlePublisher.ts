@@ -4,9 +4,10 @@
 import * as ejs from 'ejs';
 import * as fs from 'fs';
 import * as path from 'path';
+import { fileURLToPath } from 'url';
 
 import MarkdownIt from 'markdown-it';
-import * as katex from 'katex';
+import katex from 'katex';
 import highlightJs from 'highlight.js';
 import mdFootnote from 'markdown-it-footnote';
 import mdTex from 'markdown-it-texmath';
@@ -17,12 +18,16 @@ import mdInlineComment from 'markdown-it-inline-comments';
 import mdLazyImage from 'markdown-it-image-lazy-loading';
 import mdMermaid from 'markdown-it-mermaid';
 
-import PagePublisher from './PagePublisher';
-import ArticleMetaInfo from './classes/ArticleMetaInfo';
-import Article from './classes/Article';
-import ArticleModel from './models/ArticleModel';
+import PagePublisher from './PagePublisher.js';
+import ArticleMetaInfo from './classes/ArticleMetaInfo.js';
+import Article from './classes/Article.js';
+import ArticleModel from './models/ArticleModel.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 class ArticlePublisher {
+
   // A path of the directory containing markdown article files.
   static ARTICLE_ORIGIN_PATH: string = path.join(__dirname, '../_articles');
 
@@ -33,6 +38,8 @@ class ArticlePublisher {
   static ARTICLE_TEMPLATE: Buffer = fs.readFileSync(path.join(__dirname, '../app/templates/article.ejs'));
 
   static IGNORED_FILES: string[] = ['.DS_Store'];
+	
+  mdMerma 
 
   static md: MarkdownIt = new MarkdownIt({
     html: false,

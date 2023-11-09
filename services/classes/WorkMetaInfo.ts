@@ -1,4 +1,4 @@
-import WorkMetaInfoModel from '../models/WorkMetaInfoModel';
+import WorkMetaInfoModel from '../models/WorkMetaInfoModel.js';
 
 class WorkMetaInfo implements WorkMetaInfoModel {
   id: number;

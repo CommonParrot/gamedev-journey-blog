@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 
-import ArticlePublisher from '../services/ArticlePublisher';
-import WorkPublisher from '../services/WorkPublisher';
-import PagePublisher from '../services/PagePublisher';
+import ArticlePublisher from '../services/ArticlePublisher.js';
+import WorkPublisher from '../services/WorkPublisher.js';
+import PagePublisher from '../services/PagePublisher.js';
 
 const args: string[] = process.argv.slice(2);
 const target: string = args[0];

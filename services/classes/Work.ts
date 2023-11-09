@@ -1,5 +1,5 @@
-import WorkModel from '../models/WorkModel';
-import WorkMetaInfo from './WorkMetaInfo';
+import WorkModel from '../models/WorkModel.js';
+import WorkMetaInfo from './WorkMetaInfo.js';
 
 class Work extends WorkMetaInfo {
   work: WorkModel;

@@ -1,8 +1,13 @@
 import * as ejs from 'ejs';
 import * as fs from 'fs';
 import * as path from 'path';
-import ArticleModel from './models/ArticleModel';
-import WorkModel from './models/WorkModel';
+import ArticleModel from './models/ArticleModel.js';
+import WorkModel from './models/WorkModel.js';
+
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 class PagePublisher {
   public static publishPage(page?: 'index' | 'about') {
